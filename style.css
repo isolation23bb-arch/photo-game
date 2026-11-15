@@ -25,3 +25,32 @@ button{
   font-weight:bold;
   margin:10px;
 }
+
+#progressText{
+  font-size:20px;
+  font-weight:bold;
+  margin:15px 0;
+  color:#333;
+}
+
+#progressBarContainer{
+  width:500px;
+  max-width:90%;
+  height:20px;
+  background:#e5e5e5;
+  border-radius:20px;
+  margin:10px auto 20px auto;
+  overflow:hidden;
+}
+
+#progressBar{
+  width:0%;
+  height:100%;
+  background:linear-gradient(
+    90deg,
+    #4facfe,
+    #00f2fe
+  );
+  transition:0.5s;
+}
+
