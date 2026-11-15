@@ -37,7 +37,7 @@ const scoreBoard = document.getElementById("score");
 let questions = [];
 let currentIndex = 0;
 let totalScore = 0;
-let nickname = "",
+let nickname = "";
 let startTime;
 
 // Firestore에서 문제 불러오기
