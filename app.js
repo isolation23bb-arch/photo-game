@@ -1,0 +1,25 @@
+body{
+  font-family:sans-serif;
+  text-align:center;
+}
+
+img{
+  width:300px;
+  height:300px;
+  object-fit:cover;
+  margin:20px;
+}
+
+input{
+  padding:10px;
+  width:200px;
+}
+
+button{
+  padding:10px;
+  margin:5px;
+}
+
+ document.body.innerHTML =
+ html;
+}
