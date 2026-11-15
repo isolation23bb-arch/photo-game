@@ -37,6 +37,7 @@ const scoreBoard = document.getElementById("score");
 let questions = [];
 let currentIndex = 0;
 let totalScore = 0;
+let nickname = "",
 let startTime;
 
 // Firestore에서 문제 불러오기
@@ -49,7 +50,28 @@ snapshot.forEach((item) => {
 // 문제 섞기
 questions.sort(() => Math.random() - 0.5);
 
-showQuestion();
+document
+.getElementById("startBtn")
+.addEventListener("click",()=>{
+
+  nickname =
+  document
+  .getElementById("nickname")
+  .value
+  .trim();
+
+  if(!nickname){
+    alert("닉네임 입력!");
+    return;
+  }
+
+  document
+  .getElementById("loginBox")
+  .style.display = "none";
+
+  showQuestion();
+
+});
 
 function showQuestion() {
   if (currentIndex >= questions.length) {
@@ -105,6 +127,7 @@ async function finishGame() {
   await setDoc(
     doc(db, "scores", uid),
     {
+      nickname: nickname,
       score: totalScore
     }
   );
@@ -129,7 +152,10 @@ async function finishGame() {
   ranking.forEach((user, index) => {
     html += `
       <div>
-        ${index + 1}위 : ${user.score}점
+        ${index + 1}위
+        ${user.nickname}
+        -
+        ${user.score}점
       </div>
     `;
   });
