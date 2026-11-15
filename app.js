@@ -15,12 +15,12 @@ import {
 
 // Firebase 콘솔에서 받은 값으로 교체
 const firebaseConfig = {
-  apiKey: "AIzaSyBIsZruX94_SmRn8UCi7dzRJPELYJAVPII",
-  authDomain: "photo-game-afd80.firebaseapp.com",
-  projectId: "photo-game-afd80",
-  storageBucket: "photo-game-afd80.firebasestorage.app",
-  messagingSenderId: "691177476474",
-  appId: "1:691177476474:web:004e9e4c6dffa2e01b86c3"
+  apiKey: "AIzaSyDTFHrywaRXI0--y8FG0IW54X6MMEWMZSs",
+  authDomain: "photo-game-ca282.firebaseapp.com",
+  projectId: "photo-game-ca282",
+  storageBucket: "photo-game-ca282.firebasestorage.app",
+  messagingSenderId: "900755035353",
+  appId: "1:900755035353:web:f7598aa48e034950301ac8"
 };
 
 const app = initializeApp(firebaseConfig);
