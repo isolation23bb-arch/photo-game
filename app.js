@@ -103,12 +103,12 @@ document.getElementById("submit").addEventListener("click", () => {
     totalScore += earned;
 
     result.innerHTML =
-      `✅ 정답!<br>
-      ${earned}점 획득<br>
+      `✅ 정답!
+      ${earned}점 획득
       정답: ${questions[currentIndex].name}`;
   } else {
     result.innerHTML =
-      `❌ 오답<br>
+      `❌ 오답
       정답: ${questions[currentIndex].name}`;
   }
 
