@@ -65,6 +65,8 @@ document
     return;
   }
 
+  document.getElementById("bgm").play();
+
   document
   .getElementById("loginBox")
   .style.display = "none";
@@ -74,7 +76,6 @@ document
   .style.display = "block";
 
   showQuestion();
-
 });
 
 
