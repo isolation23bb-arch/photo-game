@@ -1,39 +1,60 @@
 <!DOCTYPE html>
-
 <html>
+
 <head>
   <meta charset="UTF-8">
   <title>동아리 사진 퀴즈</title>
-<div id="loginBox">
-  <input id="nickname" placeholder="닉네임">
-  <button id="startBtn">게임 시작</button>
-</div>
   <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
-<h1>동아리 사진 퀴즈</h1>
+  <div id="loginBox">
 
-<div id="score">점수: 0</div>
+    <h1>동아리 사진 퀴즈</h1>
 
-<img id="photo">
+    <input
+      id="nickname"
+      placeholder="닉네임">
 
-<input
-  id="answer"
-  placeholder="이 사람은 누구?"
->
+    <button id="startBtn">
+      게임 시작
+    </button>
 
-<button id="submit">
-정답 제출
-</button>
+  </div>
 
-<div id="result"></div>
+  <div id="gameArea" style="display:none;">
 
-<button id="next">
-다음 문제
-</button>
+    <h1>동아리 사진 퀴즈</h1>
 
-<script type="module" src="app.js"></script>
+    <div id="score">점수: 0</div>
+
+    <img id="photo">
+
+    <br><br>
+
+    <input
+      id="answer"
+      placeholder="이 사람은 누구?">
+
+    <button id="submit">
+      정답 제출
+    </button>
+
+    <br><br>
+
+    <div id="result"></div>
+
+    <br>
+
+    <button id="next">
+      다음 문제
+    </button>
+
+  </div>
+
+  <script type="module" src="app.js"></script>
 
 </body>
+
 </html>
