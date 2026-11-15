@@ -85,8 +85,14 @@ function showQuestion() {
     return;
   }
 
-  document.getElementById("progress").innerHTML =
-    `문제 ${currentIndex + 1} / ${questions.length}`;
+  document.getElementById("progressText").innerHTML =
+    `📸 문제 ${currentIndex + 1} / ${questions.length}`;
+
+  const percent =
+    ((currentIndex + 1) / questions.length) * 100;
+
+  document.getElementById("progressBar").style.width =
+    `${percent}%`;
 
   photo.src = questions[currentIndex].image;
 
