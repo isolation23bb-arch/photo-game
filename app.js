@@ -86,7 +86,7 @@ function showQuestion() {
   }
 
   document.getElementById("progressText").innerHTML =
-    `📸 문제 ${currentIndex + 1} / ${questions.length}`;
+    `문제 ${currentIndex + 1} / ${questions.length}`;
 
   const percent =
     ((currentIndex + 1) / questions.length) * 100;
