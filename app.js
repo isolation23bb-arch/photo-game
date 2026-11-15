@@ -69,9 +69,14 @@ document
   .getElementById("loginBox")
   .style.display = "none";
 
+  document
+  .getElementById("gameArea")
+  .style.display = "block";
+
   showQuestion();
 
 });
+
 
 function showQuestion() {
   if (currentIndex >= questions.length) {
