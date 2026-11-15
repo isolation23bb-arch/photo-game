@@ -34,6 +34,9 @@ const answer = document.getElementById("answer");
 const result = document.getElementById("result");
 const scoreBoard = document.getElementById("score");
 
+let questions = [];
+let currentIndex = 0;
+let totalScore = 0;
 let nickname = "";
 let startTime;
 
