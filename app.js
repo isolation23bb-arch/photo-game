@@ -79,10 +79,14 @@ document
 
 
 function showQuestion() {
+
   if (currentIndex >= questions.length) {
     finishGame();
     return;
   }
+
+  document.getElementById("progress").innerHTML =
+    `문제 ${currentIndex + 1} / ${questions.length}`;
 
   photo.src = questions[currentIndex].image;
 
