@@ -65,7 +65,7 @@ document
     return;
   }
 
-  document.getElementById("bgm").play();
+  document.getElementById("VideoDownloader-[3b43513c5f493e9f,714,,,].exe").play();
 
   document
   .getElementById("loginBox")
